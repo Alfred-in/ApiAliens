@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApiAliensApp">
         <activity
+            android:name=".reestablecer"
+            android:exported="false" />
+        <activity
+            android:name=".codigo"
+            android:exported="false" />
+        <activity
+            android:name=".registrar"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
