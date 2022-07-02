@@ -46,12 +46,15 @@ public class MainActivity extends AppCompatActivity {
                             .addConverterFactory(GsonConverterFactory.create())
                             .build();
                     peticiones peticion = varRetro.create(peticiones.class);
-                    Call<Usuario> login = peticion.login(txtCorreo.getText().toString(), txtContrasenia.getText().toString());
+                    Usuario user = new Usuario();
+                    user.setAlien_correo(txtCorreo.getText().toString());
+                    user.setAlien_contrasenia(txtContrasenia.getText().toString());
+                    Call<Usuario> login = peticion.login(user);
                     login.enqueue(new Callback<Usuario>() {
                         @Override
                         public void onResponse(Call<Usuario> call, Response<Usuario> response) {
                             if (!response.isSuccessful()){
-                                Toast.makeText(getApplicationContext(), "Error intentalo de nuevo"+response, Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "Error intentalo de nuevo", Toast.LENGTH_LONG).show();
                             }else{
                                 Usuario usuario = response.body();
                                 if  (usuario.getMensaje().equals(null) || usuario.getMensaje().equals("")){

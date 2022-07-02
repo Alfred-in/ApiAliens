@@ -4,8 +4,6 @@ import com.example.apialiensapp.model.Usuario;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.GET;
-import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
@@ -14,8 +12,7 @@ public interface peticiones {
     Call<Usuario> registrar(@Body Usuario usuario);
 
     @POST("login")
-    Call<Usuario> login(@Query("alien_correo") String correo,
-                        @Query("alien_contrasenia") String contrasenia);
+    Call<Usuario> login(@Body Usuario usuario);
 
 
     /*@POST("verificarCredenciales")
