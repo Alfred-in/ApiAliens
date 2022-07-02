@@ -9,6 +9,7 @@ public class Usuario {
     private String alien_contrasenia;
     private String alien_nac;
     private String alien_status;
+    private String Mensaje;
 
     public Usuario(String alien_usuario, String alien_nombre, String alien_ap, String alien_am, String alien_correo, String alien_contrasenia, String alien_nac, String alien_status) {
         this.alien_usuario = alien_usuario;
@@ -91,5 +92,13 @@ public class Usuario {
 
     public void setAlien_status(String alien_status) {
         this.alien_status = alien_status;
+    }
+
+    public String getMensaje() {
+        return Mensaje;
+    }
+
+    public void setMensaje(String mensaje) {
+        Mensaje = mensaje;
     }
 }

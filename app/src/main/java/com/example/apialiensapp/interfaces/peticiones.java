@@ -18,7 +18,7 @@ public interface peticiones {
                         @Query("alien_contrasenia") String contrasenia);
 
 
-    @POST("verificarCredenciales")
+    /*@POST("verificarCredenciales")
     Call<Usuario> verificar(@Query("correo") String correo,
                             @Query("contrasenia") String contrasenia);
 
@@ -31,7 +31,7 @@ public interface peticiones {
     @POST("cambio/codigo")
     Call<Usuario> cambio(@Query("codigo") String codigo,
                          @Query("contrasenia") String contrasenia,
-                         @Query("contrasenia2") String contrasenia2);
+                         @Query("contrasenia2") String contrasenia2);*/
     /*"alien_usuario" : "rem",
 "alien_nombre" : "Raul",
 "alien_ap" : "Estrada",
