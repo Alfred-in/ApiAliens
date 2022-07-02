@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <resources>
     <color name="md_theme_light_primary">#476810</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>
@@ -29,6 +29,7 @@
     <color name="md_theme_light_shadow">#000000</color>
     <color name="md_theme_light_surfaceTint">#476810</color>
     <color name="md_theme_light_surfaceTintColor">#476810</color>
+    <color name="seed">#476810</color>
     <color name="md_theme_dark_primary">#ACD370</color>
     <color name="md_theme_dark_onPrimary">#213600</color>
     <color name="md_theme_dark_primaryContainer">#324F00</color>
@@ -58,4 +59,5 @@
     <color name="md_theme_dark_shadow">#000000</color>
     <color name="md_theme_dark_surfaceTint">#ACD370</color>
     <color name="md_theme_dark_surfaceTintColor">#ACD370</color>
+    <color name="seed">#476810</color>
 </resources>

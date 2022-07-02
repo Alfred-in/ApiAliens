@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/GON161/AndroidStudioProjects/ApiAliens/app/src/main/res/drawable/ic_outline_email_24.xml" value="0.141" />
+        <entry key="..\:/Users/GON161/AndroidStudioProjects/ApiAliens/app/src/main/res/font/poppins_semibold.xml" value="0.234375" />
+        <entry key="..\:/Users/GON161/AndroidStudioProjects/ApiAliens/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/GON161/AndroidStudioProjects/ApiAliens/app/src/main/res/layout/activity_registrar.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/mrsrw/AndroidStudioProjects/ApiAliens/app/src/main/res/layout/activity_codigo.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mrsrw/AndroidStudioProjects/ApiAliens/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mrsrw/AndroidStudioProjects/ApiAliens/app/src/main/res/layout/activity_reestablecer.xml" value="0.20416666666666666" />

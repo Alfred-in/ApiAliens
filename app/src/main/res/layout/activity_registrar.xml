@@ -7,7 +7,7 @@
     android:padding="40dp"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".RegistroActivity">
+    tools:context=".registrar">
 
 
     <com.google.android.material.textview.MaterialTextView

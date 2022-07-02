@@ -7,7 +7,7 @@
     android:padding="40dp"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".MainActivity">
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txt_titulo"
         android:layout_width="wrap_content"
