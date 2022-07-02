@@ -30,6 +30,10 @@ public class Usuario {
         this.alien_contrasenia = alien_contrasenia;
         this.alien_nac = alien_nac;
     }
+
+    public Usuario() {
+    }
+
     public String getAlien_usuario() {
         return alien_usuario;
     }
