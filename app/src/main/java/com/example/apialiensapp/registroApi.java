@@ -1,5 +1,7 @@
 package com.example.apialiensapp;
 
+import android.view.View;
+
 import com.example.apialiensapp.interfaces.peticiones;
 import com.example.apialiensapp.model.Usuario;
 
@@ -17,7 +19,7 @@ public class registroApi {
     public void registrar(String usuario,String Nombre, String ApellidoPaterno, String ApellidoMaterno, String Correo, String Contrasenia, String Contrasenia2, String FechaNacimiento) {
         varRetro = new Retrofit.Builder().baseUrl(URL).addConverterFactory(GsonConverterFactory.create()).build();
         peticiones consApi = varRetro.create(peticiones.class);
-        Usuario usu=new Usuario(usuario, Nombre, ApellidoPaterno, ApellidoMaterno, Correo, Contrasenia, FechaNacimiento);
+        Usuario usu=new Usuario(usuario, Nombre, ApellidoPaterno, ApellidoMaterno, Correo, Contrasenia, FechaNacimiento,"Activo");
         Call<Usuario> call = consApi.registrar(usu);
         call.enqueue(new Callback<Usuario>() {
             @Override
@@ -26,7 +28,11 @@ public class registroApi {
                     if (response.isSuccessful()) {
                         Usuario m = response.body();
                         System.out.println(call);
-
+                        System.out.println(m.getAlien_nombre());
+                        System.out.println(m.getAlien_correo());
+                        System.out.println(m.getAlien_contrasenia());
+                        System.out.println(m.getAlien_nac());
+                        System.out.println(m.getAlien_status());
                     }
                 } catch (Exception ex) {
                     System.out.println("UWUn't " + ex);
