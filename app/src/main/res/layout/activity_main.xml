@@ -71,7 +71,6 @@
             android:text="Restablecer."
             android:textColor="@color/md_theme_light_primary"
             android:textSize="15dp"
-            android:onClick="restablecer"
             />
 
     </LinearLayout>
@@ -97,7 +96,6 @@
             android:text="Registrate aquí."
             android:textColor="@color/md_theme_light_primary"
             android:textSize="15dp"
-            android:onClick="registro"
             />
 
     </LinearLayout>
